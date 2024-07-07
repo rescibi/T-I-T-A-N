@@ -1,0 +1,116 @@
+.tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color:rgb(11, 11, 11);
+    
+  }
+  .amatic-sc-regular {
+      font-family: "Amatic SC", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+.nav-link{
+    
+    position:relative;
+}
+
+span{
+    color:red;
+}
+
+.nav-link::after{
+    content:'';
+    opacity:0;
+    transition:all 0.5s;
+    height:2px;
+    width:100%;
+    background-color: red;
+    position:absolute;
+    bottom:0;
+    left:0;
+
+}
+.nav-link:hover::after{
+    content:'';
+    opacity:1;
+    height:2px;
+    width:100%;
+    background-color:red;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+ /* chefs */
+.cont .c1
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.cont .c1:hover
+{
+    height: 450px;
+}
+.cont .c1 .booth
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.cont .c1 .chef
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.cont .c1 .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.cont .c1:hover .content
+ {  
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+/* form validation*/
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+    
+}
+
+
+
+
+
+
+
